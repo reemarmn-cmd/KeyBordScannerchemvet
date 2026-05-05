@@ -4,5 +4,5 @@
     <subtype
         android:imeSubtypeLocale="en_US"
         android:imeSubtypeMode="keyboard"
-        android:label="@string/all_barcodes" />
+        android:label="Chemvet Barcode Keyboard" />
 </input-method>
