@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Barcode Keyboard</string>
+    <string name="app_name">Chemvet Barcode Keyboard</string>
     <string name="all_barcodes">All barcodes</string>
     <string name="grant_perm">Allow camera use</string>
-    <string name="settings_text">Open any text field and select barcode keyboard as an input method, then scan any QR code.\n\nBuilt by Raphael Michel\n\nReleased under Apache License 2.0\n\nBased on the barcodescanner-view project by dm77 (Apache License 2.0) and the ZXing project by Google (Apache License 2.0).\n\nSource code at https://github.com/raphaelm/android-barcode-keyboard</string>
+    <string name="settings_text">Chemvet Barcode Keyboard\n\nUse the rear camera to scan barcodes and automatically insert the scanned value with Enter.\n\nCustomized for Chemvet factory internal use.\n\nDeveloped and customized by Reema Al-Nobani.\n\nBased on open-source barcode scanning libraries including ZXing.</string>
 </resources>
