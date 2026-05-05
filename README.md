@@ -8,9 +8,10 @@ After each successful scan, an **Enter key action is triggered automatically**, 
 
 This version has been customized for internal use at Chemvet.
 
-Developed and customized by Reema Moneer.
+Developed and customized by Reema Al-Nobani.
 
 ## License
 
-Based on open-source projects including ZXing by Google.
+This application is based on open-source libraries including ZXing by Google.
+
 
