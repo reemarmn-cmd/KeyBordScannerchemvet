@@ -12,6 +12,8 @@ import android.widget.Button
 import androidx.core.content.ContextCompat
 import com.google.zxing.Result
 import me.dm7.barcodescanner.zxing.ZXingScannerView
+import android.media.AudioManager
+import android.media.ToneGenerator
 
 class BarcodeInputService : InputMethodService(), ZXingScannerView.ResultHandler {
     var scannerView: ZXingScannerView? = null
@@ -65,6 +67,8 @@ class BarcodeInputService : InputMethodService(), ZXingScannerView.ResultHandler
         }
         lastText = rawResult.text
         lastTime = System.currentTimeMillis()
+        ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100)
+    .startTone(ToneGenerator.TONE_PROP_BEEP, 150)
         currentInputConnection.also { ic: InputConnection ->
             ic.commitText(rawResult.text, 1)
             ic.sendKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER))
