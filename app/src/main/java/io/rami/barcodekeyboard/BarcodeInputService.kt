@@ -68,7 +68,7 @@ class BarcodeInputService : InputMethodService(), ZXingScannerView.ResultHandler
         lastText = rawResult.text
         lastTime = System.currentTimeMillis()
         ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100)
-    .startTone(ToneGenerator.TONE_PROP_BEEP, 150)
+    .startTone(ToneGenerator.TONE_PROP_PROMPT, 150)
         currentInputConnection.also { ic: InputConnection ->
             ic.commitText(rawResult.text, 1)
             ic.sendKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER))
